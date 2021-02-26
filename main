@@ -1,0 +1,42 @@
+#include <iostream>
+
+ using namespace std;
+
+
+int main (){
+
+    char tipoC;
+    float litros;
+
+
+    cout << "Digite o tipo de combustível, A para Alcool ou G para Gasolina: ";
+        cin >> tipoC;
+
+if (tipoC == 'A' || tipoC == 'a' || tipoC == 'G' || tipoC == 'g'){
+     cout << "Digite a quantidade de litros para abastecer: ";
+        cin >> litros;
+
+if (tipoC =='A' || tipoC == 'a')
+if(litros <= 20)
+
+    cout << "O valor do abastecimento com desconto é R$ " <<(litros*2.90)-2.9*0.03*litros;
+ else
+
+     cout << "O valor do abastecimento com desconto é R$ " <<(litros*2.90)-2.9*0.05*litros;
+else if (tipoC =='G' || tipoC == 'g')
+if(litros <= 20)
+
+    cout << "O valor do abastecimento com desconto é R$ " <<(litros*3.30)-3.3*0.04*litros;
+
+ else
+    cout << "O valor do abastecimento com desconto é R$ " <<(litros*3.30)-3.3*0.06*litros;
+
+ else
+    cout << "Tipo de combustível não conhecido";
+
+ }
+
+ else
+    cout << "Tipo de combustível não conhecido";
+
+ }
